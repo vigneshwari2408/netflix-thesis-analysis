@@ -18,5 +18,5 @@ Streaming adaptations are often assumed to drive a "book bump," but the effect i
 
 This repository will be updated as the data collection and analysis are built out.
 
-**Vigneshwari Nalla** — MSc Data Analytics for Business, KEDGE Business School  
-[LinkedIn](https://linkedin.com/in/vigna24) · [Portfolio](https://vigneshwari2408.github.io/vigneshwari-portfolio/)
+Made by **Vigneshwari Nalla (Vee)** · MSc Data Analytics for Business, KEDGE Business School
+[website](https://vigneshwari2408.github.io/vigneshwari-portfolio/) · [linkedin](https://www.linkedin.com/in/vigna24/) · [all projects](https://github.com/vigneshwari2408)
