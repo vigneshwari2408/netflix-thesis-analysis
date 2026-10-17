@@ -1,22 +1,48 @@
-# Netflix Thesis Analysis (Concept Stage)
+# When Netflix adapts a book, does anyone go looking for it?
 
-**Status:** Early-stage — data collection and analysis design in progress, not yet built.
+**MSc thesis · KEDGE Business School · in progress**
+*Working title: The Impact of Netflix Adaptations on Book Sales: A Data Analytics Perspective*
 
-## Idea
+Everyone "knows" a Netflix adaptation sends people back to the book. I wanted to check whether that's true, and how big the bump really is, using public data.
 
-Investigating whether Netflix book-to-screen adaptations measurably shift demand for the source novel, using Google Trends search interest and Goodreads rating/review activity as proxies for reader attention.
+&nbsp;
 
-## Planned Approach
+## Where it's at
 
-Four things this will involve: pulling Google Trends interest-over-time data for adaptation titles indexed against release dates; cross-referencing Goodreads rating-count and review-volume trends before and after release; comparing a sample of Netflix adaptations to isolate an adaptation-driven demand lift from general marketing activity; and segmenting by genre and source popularity to see where the effect is strongest.
+| | |
+|---|---|
+| ✓ | **Sample built:** 101 books adapted by Netflix, after exclusions and replacements |
+| ✓ | **Google Trends collected:** one continuous monthly window per book, 12 months before and 12 months after release |
+| ✓ | **Goodreads collected and verified:** rating, ratings count, reviews count and first publication year for all 101 books; release dates double-checked |
+| ✓ | **First full analysis run:** event-time chart, main model, event study, robustness checks, placebo test, group and genre comparisons |
+| ✓ | **Literature review planned:** 7 sections, 37 sources and a gap table comparing 11 earlier studies |
+| ✎ | **Now:** writing the literature review; the analysis is with my supervisor for feedback |
+| ○ | **Next:** methodology chapter, then results and discussion |
 
-## Why This Question
+&nbsp;
 
-Streaming adaptations are often assumed to drive a "book bump," but the effect isn't well quantified with public data. This project is an attempt to test that assumption directly rather than take it on faith.
+## The approach
+
+- **One question per book:** how did interest in this book change in the months around its Netflix release, compared with its own months before?
+- **Search interest as the signal.** Book sales data isn't public, so Google search interest stands in for reader demand, with Goodreads activity as a second view.
+- **Careful about cause.** The design shows how demand moves around a release. The thesis only claims more than an association where the method supports it.
+- **Stress-tested:** a placebo test (fake release dates), robustness checks, and comparisons by genre and by group.
+
+## Data
+
+| Source | What it gives | Why |
+|---|---|---|
+| Google Trends | Monthly search interest, searched as book title + author | A public, consistent proxy for attention to the book |
+| Goodreads | Rating, ratings count, reviews count, first publication year | Reader activity and book characteristics |
+| Netflix release dates | Release month for each adaptation | The event each window is centred on |
+
+## Coming to this repo
+
+The analysis notebook, the cleaned datasets and the figures will be added once my supervisor has reviewed the approach.
+
+&nbsp;
 
 ---
-
-This repository will be updated as the data collection and analysis are built out.
 
 Made by **Vigneshwari Nalla (Vee)** · MSc Data Analytics for Business, KEDGE Business School
 [website](https://vigneshwari2408.github.io/vigneshwari-portfolio/) · [linkedin](https://www.linkedin.com/in/vigna24/) · [all projects](https://github.com/vigneshwari2408)
